@@ -15,7 +15,7 @@ namespace WiredBrainCoffee.StackApp
             
         private static void StackDoubles()
         {
-            var stack = new SimpleStackDouble(); //Initialize an instance
+            var stack = new SimpleStack<double>(); //Initialize an instance
             stack.Push(1.2); // Using Ctrl + . we can generate the method Push on the class SimpleStack
             stack.Push(2.8);
             stack.Push(3.0);
@@ -33,7 +33,7 @@ namespace WiredBrainCoffee.StackApp
 
         private static void StackStrings()
         {
-            var stack = new SimpleStackString();
+            var stack = new SimpleStack<string>();
             stack.Push("Wired Brain Coffee");
             stack.Push("Pluralsight");
 
