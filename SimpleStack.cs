@@ -1,9 +1,16 @@
-﻿namespace WiredBrainCoffee.StackApp
+﻿using System;
+
+namespace WiredBrainCoffee.StackApp
 {
-    internal class SimpleStack
+    public class SimpleStack
     {
         public SimpleStack()
         {
+        }
+
+        public void Push(double v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
