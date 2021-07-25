@@ -12,10 +12,10 @@ namespace WiredBrainCoffee.StackApp
         }
 
 
-
+            
         private static void StackDoubles()
         {
-            var stack = new SimpleStack(); //Initialize an instance
+            var stack = new SimpleStackDouble(); //Initialize an instance
             stack.Push(1.2); // Using Ctrl + . we can generate the method Push on the class SimpleStack
             stack.Push(2.8);
             stack.Push(3.0);
@@ -24,7 +24,7 @@ namespace WiredBrainCoffee.StackApp
 
             while (stack.Count > 0)
             {
-                double item = (double)stack.Pop(); // Cast object into double
+                double item = stack.Pop(); // Cast object into double
                 Console.WriteLine($"Item: {item}");
                 sum += item;
             }
@@ -33,7 +33,7 @@ namespace WiredBrainCoffee.StackApp
 
         private static void StackStrings()
         {
-            var stack = new SimpleStack();
+            var stack = new SimpleStackString();
             stack.Push("Wired Brain Coffee");
             stack.Push("Pluralsight");
 
